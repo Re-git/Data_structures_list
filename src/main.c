@@ -9,6 +9,6 @@ int main(int argc, char const* argv[])
 {
 
     List* lista = create_list();
-    parse_file("instrukcje.txt", lista);
+    parse_file(argv[1], lista);
     destroy_list(&lista);
 }
