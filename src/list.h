@@ -1,19 +1,7 @@
 #ifndef __LIST
 #define __LIST
 
-struct List
-{
-    struct Node* head;
-};
-
-struct Node
-{
-    int value;
-    struct Node* next;
-};
-
 typedef struct List List;
-typedef struct Node Node;
 
 // create and returns instance of List
 List * create_list(void);
@@ -47,4 +35,3 @@ void sort_list(List * list);
 void reverse_list(List * list);
 
 #endif// __LIST
-

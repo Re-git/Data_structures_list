@@ -1,5 +1,4 @@
-#ifndef LIST_H
-#define LIST_H
+#include "list2.h"
 #include "list.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -241,5 +240,3 @@ void insert_to_list(List * list, int elem, int index)
 // {
 
 // }
-
-#endif // LIST_H
