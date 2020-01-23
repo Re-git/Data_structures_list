@@ -1,7 +1,21 @@
-#include "list2.h"
 #include "list.h"
 #include <stdlib.h>
 #include <stdio.h>
+
+struct List
+{
+    struct Node* head;
+};
+
+struct Node
+{
+    int value;
+    struct Node* next;
+};
+
+// typedef struct List List;
+typedef struct Node Node;
+
 
 List * create_list(void)
 {
@@ -184,7 +198,7 @@ void remove_nth_element(List * list, int index)
 void clear_list(List * list)
 {
     int count = count_elements(list);
-    printf("%d" , count);
+    // printf("%d" , count);
     for (int i = count-1; i >=0; i--)
     {
         remove_nth_element(list, i);
